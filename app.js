@@ -18,13 +18,17 @@ function calculateFinalNote() {
     let final = finalNote();
     if (final > 5) {
         response
-    } else if (final > 45 && final <= 50) {
+    } else if (final > 4.5 && final <= 5.0) {
         response.textContent = " Excelente";
-    } else if (final >= 35 && final < 45) {
+        alert(final + " nota final");
+    } else if (final >= 3.5 && final < 4.5) {
         response.textContent = " Buena";
-    } else if (final >= 20 && final < 35) {
+        alert(final + " nota final");
+    } else if (final >= 2.0 && final < 3.5) {
         response.textContent = "Perdiste pero puedes recuperar";
+        alert(final + " nota final");
     } else {
         response.textContent = "Perdiste y debes repetir la materia";
+        alert(final + " nota final");
     }
 }
